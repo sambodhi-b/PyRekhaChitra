@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyrekhachitra"
+dynamic = ["version"]
+requires-python = ">= 3.8"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [{name = "Sambodhi Bhattacharyya", email = "sambodhi.b@gmail.com"}]
+
+[tool.setuptools.dynamic]
+version = {attr = "pyrekhachitra.__version__"}
